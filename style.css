@@ -29,7 +29,7 @@ a {
 
 body {
     background: #eff3f4;
-    color: #2e2e2e;
+    color: #20283E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,6 +114,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    margin-bottom: 16px;
 }
 
 .container .about h2 {
@@ -134,6 +135,7 @@ body {
 .container .social-links {
     display: flex;
     gap: 16px;
+    margin-bottom: 16px;
 }
 
 .container .social-links a {
@@ -166,7 +168,7 @@ body {
 
 .container .tabs-container {
     overflow-x: auto;
-    margin-bottom: 4px;
+    margin-bottom: 16px;
     width: 100%;
 }
 
@@ -187,7 +189,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000;
+    color: #1F3F49;
     min-width: 112px;
     outline: none;
     padding: 12px 16px;
@@ -197,15 +199,15 @@ body {
 
 .container .tabs-container .tabs li a:hover,
 .container .tabs-container .tabs li a.active {
-    color: #FFFFFF;
-}
+    font-weight: 700;
+} 
 
 .container .tabs-container #active-tab {
     position: absolute;
     width: 100%;
     width: 112px;
     height: 100%;
-    background: #ff89a6;
+    border: 3px solid #fc8da9;
     z-index: 1;
     border-radius: 8px;
     transition: all 0.5s ease;
@@ -219,11 +221,12 @@ body {
 .container .active-tab-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.5em;
     height: 192px;
     padding: 0 4px;
     font-size: 15px;
     margin-bottom: 16px;
+    width: 100%;
 }
 
 .container .tabs-container .tabs li:nth-child(1):has(.active)~#active-tab {
@@ -244,6 +247,7 @@ body {
     margin-top: 1px;
     gap: 12px;
     padding: 8px 0;
+    width: 95%;
 }
 
 .container .tab-content .vote a {
